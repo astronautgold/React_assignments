@@ -18,6 +18,7 @@ import Product_spltwo from "../pages/Spl_two_week/Product_spltwo"
 import User_skills_spltwo from "../pages/Spl_two_week/User_skills_spltwo"
 import Usercard_spltwo from "../pages/Spl_two_week/Usercard_spltwo"
 import Taskfour from "../days/Taskfour"
+import Taskfive from "../days/Taskfive"
 
 const Approute = () => {
   const Skills=["HTML","CSS","JavaScript","React","Node.js"]
@@ -32,8 +33,10 @@ const Approute = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/taskone" element={<Taskone />} />
+        <Route path="/taskone" element={<Taskone />} />Taskfive
         <Route path="taskfour" element={<Taskfour />} />
+                <Route path="taskfive" element={<Taskfive />} />
+
         <Route path="/Spl_second_week" element={<Spl_second_week />}>
           <Route index element={<Student_spltwo Name="Ramya" Age={22} City="Chennai" Course="MERN Stack" />} />
           <Route path="student" element={<Student_spltwo Name="Ramya" Age={22} City="Chennai" Course="MERN Stack" />} />
