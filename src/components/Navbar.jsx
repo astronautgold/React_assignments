@@ -27,6 +27,7 @@ const Navbar = () => {
       >
         About
       </Link>
+      
     </nav>
   )
 }
