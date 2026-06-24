@@ -16,8 +16,10 @@ const Spl_second_week = () => {
     backgroundColor: "pink",
     color: '#111827'
   }
+   
   return (
    <>
+   
      <div className="flex gap-4 justify-center">
       <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="student">
         task1
@@ -35,6 +37,7 @@ const Spl_second_week = () => {
        <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="usercard_spltwo">
         task5
       </NavLink>
+    
     </div>
     <Outlet />
   </>

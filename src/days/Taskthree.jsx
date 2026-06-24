@@ -17,17 +17,14 @@ const Taskthree = () => {
   }
   return (<>
     <div>
-      <SchoolCardthree/>
        <div className="flex gap-4 justify-center">
       <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="schoolcardone">
         task1
       </NavLink>
-      <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="schoolcardtwo">
+      <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="schoolcoursethree">
         task2
       </NavLink>
-      <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="schoolcardthree">
-        task3
-      </NavLink>
+    
 
 
     </div>

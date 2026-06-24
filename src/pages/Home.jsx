@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <main className="flex gap-4" style={{ padding: "2rem" }}>
+    <main className="flex gap-4 flex-wrap" style={{ padding: "2rem" }}>
       <Link
         to="/taskone"
         style={{
@@ -119,6 +119,35 @@ const Home = () => {
         }}
       >
         Task_seven{" "}
+      </Link>
+
+       <Link
+        to="/task_eight"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        Task_eight{" "}
+      </Link>
+       <Link
+        to="/adiitional_tasksone"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        Adiitional_tasksone{" "}
       </Link>
     </main>
   );

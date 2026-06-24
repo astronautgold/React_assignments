@@ -21,6 +21,9 @@ import Taskfour from "../days/Taskfour"
 import Taskfive from "../days/Taskfive"
 import Task_six, { Courses, Employees } from "../days/Task_six"
 import Task_seven from "../days/Task_seven"
+import Schoolcoursethree from "../pages/Schoolthree/Schoolcoursethree"
+import Task_eight from "../days/Task_eight"
+import Adiitional_tasksone from "../pages/Adiitional_tasksone"
 
 const Approute = () => {
   const Skills=["HTML","CSS","JavaScript","React","Node.js"]
@@ -36,13 +39,14 @@ const Approute = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/taskone" element={<Taskone />} />
-        <Route path="taskfour" element={<Taskfour />} />
-                <Route path="taskfive" element={<Taskfive />} />
-               <Route path="/task_six" element={<Task_six />} />
+        <Route path="/taskfour" element={<Taskfour />} />
+        <Route path="/taskfive" element={<Taskfive />} />
+        <Route path="/task_six" element={<Task_six />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/employees" element={<Employees />} />
-               <Route path="/task_seven" element={<Task_seven />} />
-
+        <Route path="/task_seven" element={<Task_seven />} />
+        <Route path="/task_eight" element={<Task_eight />} />
+<Route path="/adiitional_tasksone" element={<Adiitional_tasksone />} />
 
         <Route path="/Spl_second_week" element={<Spl_second_week />}>
           <Route index element={<Student_spltwo Name="Ramya" Age={22} City="Chennai" Course="MERN Stack" />} />
@@ -59,11 +63,11 @@ const Approute = () => {
               />
             }
           />
-           <Route
+          <Route
             path="user_skills_spltwo"
             element={
               <User_skills_spltwo
-               skill={Skills}
+                skill={Skills}
               />
             }
           />
@@ -71,14 +75,13 @@ const Approute = () => {
             path="usercard_spltwo"
             element={
               <Usercard_spltwo
-               Name="Ramya"
-               Email="astronautgold192003@gmail.com"
-               Phone={90022329311}
-               City="chennai"
+                Name="Ramya"
+                Email="astronautgold192003@gmail.com"
+                Phone={90022329311}
+                City="chennai"
               />
             }
           />
-
         </Route>
         <Route path="/tasktwo" element={<Tasktwo />}>
           <Route path="hometwo" element={<Hometwo />} />
@@ -88,7 +91,10 @@ const Approute = () => {
           <Route path="registertwo" element={<Registertwo />} />
         </Route>
         <Route path="/taskthree" element={<Taskthree />}>
+        <Route index element={<SchoolCardthree />} />
+
           <Route path="schoolcardone" element={<SchoolCardthree />} />
+          <Route path="schoolcoursethree" element={<Schoolcoursethree />} />
         </Route>
       </Routes>
     </div>
