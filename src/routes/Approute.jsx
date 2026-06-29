@@ -24,6 +24,7 @@ import Task_seven from "../days/Task_seven"
 import Schoolcoursethree from "../pages/Schoolthree/Schoolcoursethree"
 import Task_eight from "../days/Task_eight"
 import Adiitional_tasksone from "../pages/Adiitional_tasksone"
+import { FindUser, GroupStudents, Items, SearchUser, StudentDashboard, Task_one, TotalMarks } from "../days/Addtional_one"
 
 const Approute = () => {
   const Skills=["HTML","CSS","JavaScript","React","Node.js"]
@@ -46,7 +47,6 @@ const Approute = () => {
         <Route path="/employees" element={<Employees />} />
         <Route path="/task_seven" element={<Task_seven />} />
         <Route path="/task_eight" element={<Task_eight />} />
-<Route path="/adiitional_tasksone" element={<Adiitional_tasksone />} />
 
         <Route path="/Spl_second_week" element={<Spl_second_week />}>
           <Route index element={<Student_spltwo Name="Ramya" Age={22} City="Chennai" Course="MERN Stack" />} />
@@ -96,6 +96,18 @@ const Approute = () => {
           <Route path="schoolcardone" element={<SchoolCardthree />} />
           <Route path="schoolcoursethree" element={<Schoolcoursethree />} />
         </Route>
+
+         <Route path="/adiitional_tasksone" element={<Adiitional_tasksone />}>
+          <Route index element={<Task_one/>} />
+          <Route path="task_onespl" element={<Task_one />} />
+          <Route path="items" element={<Items />} /> 
+            <Route path="totalMarks" element={<TotalMarks />} /> 
+              <Route path="items" element={<FindUser />} /> 
+              <Route path="groupStudents" element={<GroupStudents />} />
+              <Route path="searchUser" element={<SearchUser />} /> 
+              <Route path="studentDashboard" element={<StudentDashboard />} /> 
+               </Route>
+                
       </Routes>
     </div>
   )
