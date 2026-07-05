@@ -30,6 +30,9 @@ import Task_twelve from "../days/Task_twelve"
 import Task_thirteen from "../days/Task_thirteen"
 import Task_fivteen from "../days/Task_fivteen"
 import Task_sixteen from "../days/Task_sixteen"
+import Task_eleven from "../days/Task_eleven"
+import Task_ten from "../days/Task_ten"
+import Task_nine from "../days/Task_nine"
 
 const Approute = () => {
   const Skills=["HTML","CSS","JavaScript","React","Node.js"]
@@ -54,10 +57,17 @@ const Approute = () => {
         <Route path="/task_eight" element={<Task_eight />} />
  <Route path="/spl_week_three" element={<Spl_week_three />} />
  
+  <Route path="/task_nine" element={<Task_nine />} />
+
+
   <Route path="/task_twelve" element={<Task_twelve />} />
    <Route path="/task_thirteen" element={<Task_thirteen/>} />
 <Route path="/task_fivteen" element={<Task_fivteen/>} />
    <Route path="/task_sixteen" element={<Task_sixteen/>} />
+
+   <Route path="/task_eleven" element={<Task_eleven/>} />
+      <Route path="/task_ten" element={<Task_ten/>} />
+
 
         <Route path="/Spl_second_week" element={<Spl_second_week />}>
           <Route index element={<Student_spltwo Name="Ramya" Age={22} City="Chennai" Course="MERN Stack" />} />

@@ -135,8 +135,8 @@ const Home = () => {
       >
         Task_eight{" "}
       </Link>
-       <Link
-        to="/adiitional_tasksone"
+      <Link
+        to="/task_nine"
         style={{
           display: "inline-block",
           padding: "0.75rem 1.25rem",
@@ -147,23 +147,38 @@ const Home = () => {
           fontWeight: "600",
         }}
       >
-        Adiitional_tasksone{" "}
-      </Link>
-       <Link
-        to="/spl_week_three"
-        style={{
-          display: "inline-block",
-          padding: "0.75rem 1.25rem",
-          background: "#2563eb",
-          color: "#fff",
-          borderRadius: "999px",
-          textDecoration: "none",
-          fontWeight: "600",
-        }}
-      >
-        Spl_week_three{" "}
+       Task_nine{" "}
       </Link>
       <Link
+        to="/task_ten"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+       Task_ten{" "}
+      </Link> 
+       <Link
+        to="/task_eleven"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+       Task_eleven{" "}
+      </Link>
+
+       <Link
         to="/task_twelve"
         style={{
           display: "inline-block",
@@ -222,6 +237,39 @@ const Home = () => {
       >
        Task_sixteen{" "}
       </Link> 
+       <Link
+        to="/adiitional_tasksone"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        Adiitional_tasksone{" "}
+      </Link>
+       <Link
+        to="/spl_week_three"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        Spl_week_three{" "}
+      </Link>
+      
+
+     
+
+      
     </main>
   );
 };
