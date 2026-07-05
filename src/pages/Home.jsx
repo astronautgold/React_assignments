@@ -149,6 +149,79 @@ const Home = () => {
       >
         Adiitional_tasksone{" "}
       </Link>
+       <Link
+        to="/spl_week_three"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        Spl_week_three{" "}
+      </Link>
+      <Link
+        to="/task_twelve"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        Task_twelve{" "}
+      </Link>
+
+      <Link
+        to="/task_thirteen"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        Task_thirteen{" "}
+      </Link>  
+
+      <Link
+        to="/task_fivteen"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+       Task_fivteen{" "}
+      </Link> 
+
+      <Link
+        to="/task_sixteen"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+       Task_sixteen{" "}
+      </Link> 
     </main>
   );
 };
