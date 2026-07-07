@@ -238,6 +238,20 @@ const Home = () => {
        Task_sixteen{" "}
       </Link> 
        <Link
+        to="/task_seventeen"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        Task_seventeen{" "}
+      </Link> 
+       <Link
         to="/adiitional_tasksone"
         style={{
           display: "inline-block",
@@ -264,7 +278,7 @@ const Home = () => {
         }}
       >
         Spl_week_three{" "}
-      </Link>
+      </Link>  
       
 
      

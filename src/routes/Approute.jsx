@@ -33,6 +33,7 @@ import Task_sixteen from "../days/Task_sixteen"
 import Task_eleven from "../days/Task_eleven"
 import Task_ten from "../days/Task_ten"
 import Task_nine from "../days/Task_nine"
+import Task_seventeen from "../days/Task_seventeen"
 
 const Approute = () => {
   const Skills=["HTML","CSS","JavaScript","React","Node.js"]
@@ -58,6 +59,7 @@ const Approute = () => {
  <Route path="/spl_week_three" element={<Spl_week_three />} />
  
   <Route path="/task_nine" element={<Task_nine />} />
+ <Route path="/task_seventeen" element={<Task_seventeen />} />
 
 
   <Route path="/task_twelve" element={<Task_twelve />} />
