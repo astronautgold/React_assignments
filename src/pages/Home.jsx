@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
+   <>
     <main className="flex gap-4 flex-wrap" style={{ padding: "2rem" }}>
       <Link
         to="/taskone"
@@ -279,12 +280,31 @@ const Home = () => {
       >
         Spl_week_three{" "}
       </Link>  
-      
-
-     
-
-      
+    
     </main>
+    <hr />
+    <div>
+<Link
+        to="/splclass_one"
+        style={{
+          display: "inline-block",
+          padding: "0.75rem 1.25rem",
+          background: "#2563eb",
+          color: "#fff",
+          borderRadius: "999px",
+          textDecoration: "none",
+          fontWeight: "600",
+        }}
+      >
+        Splclass_one{" "}
+      </Link>  
+
+    </div>
+   </>
+    
+
+
+
   );
 };
 
