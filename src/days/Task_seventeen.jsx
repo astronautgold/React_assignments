@@ -1,9 +1,8 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const Task_seventeen = () => {
   const inref = useRef();
   const pararef = useRef();
-
   const homeref = useRef();
 
   const aboutref = useRef();
@@ -14,6 +13,13 @@ const Task_seventeen = () => {
     homeref.current.scrollIntoView({
       behavior: "smooth",
     });
+  };
+const inputRef = useRef();
+  const [text, setText] = useState("");
+
+  const handleClick = () => {
+    setText(inputRef.current.value);
+    
   };
 
   const about = () => {
@@ -30,6 +36,7 @@ const Task_seventeen = () => {
   const handlein = () => {
     const data = inref.current.value;
     pararef.current.innerHTML = data;
+   
   };
   
 const isVisible = useRef(true); // tracks state without re-rendering
@@ -38,6 +45,7 @@ const toggle = () => {
   isVisible.current = !isVisible.current;
   paratoggle.current.style.display = isVisible.current ? "block" : "none";
 };
+
   return (
     <>
       <div>
@@ -46,7 +54,7 @@ const toggle = () => {
           <input
             type="text"
             onChange={handlein}
-            v
+            
             placeholder="enter something"
             ref={inref}
             className="border"
@@ -135,9 +143,18 @@ const toggle = () => {
     toggle
   </button>
       </div>
+<hr />
+
 
       <div>
-        
+         <h2>task4</h2>
+         <div className="flex gap-20">
+      <input type="text" ref={inputRef} placeholder="Enter your name" />
+
+      <button onClick={handleClick}>Show Text</button>
+
+      <h2>{text}</h2>
+    </div>
 
       </div>
     </>
