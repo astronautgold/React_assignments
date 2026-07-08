@@ -35,6 +35,10 @@ import Task_ten from "../days/Task_ten"
 import Task_nine from "../days/Task_nine"
 import Task_seventeen from "../days/Task_seventeen"
 import Splclass_one from "../Splclass/Splclass_one"
+import Task_eigthteen from "../days/Task_eigthteen"
+import Task_eighteen_one from "../pages/Task_eighteen/Task_one/Task_one"
+import Product_cards from "../pages/Task_eighteen/Task_two/Product_cards"
+import Header from "../pages/Task_eighteen/Task_three/Header"
 
 const Approute = () => {
   const Skills=["HTML","CSS","JavaScript","React","Node.js"]
@@ -131,6 +135,20 @@ const Approute = () => {
               <Route path="groupStudents" element={<GroupStudents />} />
               <Route path="searchUser" element={<SearchUser />} /> 
               <Route path="studentDashboard" element={<StudentDashboard />} /> 
+               </Route>
+
+
+                <Route path="/Task_eigthteen" element={<Task_eigthteen />}>
+          <Route index element={<Task_eighteen_one/>} />
+          <Route path="task_one" element={<Task_eighteen_one />} />
+          <Route path="product_cards" element={<Product_cards />} />
+
+          <Route path="header" element={<Header />} />
+
+          <Route path="task_one" element={<Task_eighteen_one />} />
+
+          <Route path="task_one" element={<Task_eighteen_one />} />
+
                </Route>
                 
       </Routes>
