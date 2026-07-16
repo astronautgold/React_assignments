@@ -1,100 +1,62 @@
 import { Link } from "react-router-dom";
 
+const skills = ["React", "JavaScript", "CSS", "Tailwind", "Responsive UI", "Problem Solving"];
+
 const Home = () => {
   return (
-   <>
-    <main className="home-page">
-      <h1 className="home-title">Task links</h1>
+    <main className="portfolio-page">
+      <section className="hero-card">
+        <div className="hero-content">
+          <p className="eyebrow">Frontend Developer • React • UI/UX</p>
+          <h1>I design modern web experiences that feel polished, fast, and professional.</h1>
+          <p>
+            I’m a fresher developer building clean, responsive interfaces with a strong eye for detail.
+            My goal is to deliver work that feels like it belongs in a high-performing product team.
+          </p>
+          <div className="hero-actions">
+            <Link className="btn btn-primary" to="/assignments">
+              Explore my work
+            </Link>
+            <a className="btn btn-secondary" href="mailto:yourname@email.com">
+              Let’s connect
+            </a>
+          </div>
+        </div>
 
-      <section className="home-section">
-        <h2 className="home-section-title">Daily tasks</h2>
-        <div className="home-links">
-          <Link className="home-link" to="/taskone">
-            Go to Taskone
-          </Link>
-
-          <Link className="home-link" to="/tasktwo">
-            Go to Tasktwo
-          </Link>
-          <Link className="home-link" to="/taskthree">
-            Go to Taskthree
-          </Link>
-          <Link className="home-link" to="/Spl_second_week">
-            Spl_second_week
-          </Link>
-
-          <Link className="home-link" to="/taskfour">
-            Taskfour
-          </Link>
-          <Link className="home-link" to="/taskfive">
-            Taskfive
-          </Link>
-
-          <Link className="home-link" to="/task_six">
-            Task_six
-          </Link>
-
-          <Link className="home-link" to="/task_seven">
-            Task_seven
-          </Link>
-
-          <Link className="home-link" to="/task_eight">
-            Task_eight
-          </Link>
-          <Link className="home-link" to="/task_nine">
-            Task_nine
-          </Link>
-          <Link className="home-link" to="/task_ten">
-            Task_ten
-          </Link>
-          <Link className="home-link" to="/task_eleven">
-            Task_eleven
-          </Link>
-
-          <Link className="home-link" to="/task_twelve">
-            Task_twelve
-          </Link>
-
-          <Link className="home-link" to="/task_thirteen">
-            Task_thirteen
-          </Link>
-
-          <Link className="home-link" to="/task_fivteen">
-           Task_fivteen
-          </Link>
-
-          <Link className="home-link" to="/task_sixteen">
-           Task_sixteen
-          </Link>
-          <Link className="home-link" to="/task_seventeen">
-            Task_seventeen
-          </Link>
-           <Link className="home-link" to="/task_eigthteen">
-            Task_eigthteen
-          </Link>
-          <Link className="home-link" to="/adiitional_tasksone">
-            Adiitional_tasksone
-          </Link>
-          <Link className="home-link" to="/spl_week_three">
-            Spl_week_three
-          </Link>
+        <div className="hero-side-card">
+          <span className="status-pill">Available for opportunities</span>
+          <h3>Focused on growth, consistency, and real-world quality.</h3>
+          <p>I combine creativity with strong fundamentals to create interfaces that feel modern and trustworthy.</p>
         </div>
       </section>
 
-      <section className="home-section">
-        <h2 className="home-section-title">Spl class task</h2>
-        <div className="home-links">
-          <Link className="home-link" to="/splclass_one">
-            Splclass_one
-          </Link>
-        </div>
+      <section className="info-grid">
+        <article className="card">
+          <h2>About Me</h2>
+          <p>
+            I am a motivated junior front-end developer who enjoys turning ideas into smooth, visually appealing web experiences.
+            Even as a fresher, I aim to bring a senior-level mindset through thoughtful design, clean structure, and user-centered thinking.
+          </p>
+        </article>
+
+        <article className="card">
+          <h2>Core Skills</h2>
+          <div className="skill-list">
+            {skills.map((skill) => (
+              <span key={skill}>{skill}</span>
+            ))}
+          </div>
+        </article>
+      </section>
+
+      <section className="card contact-card">
+        <h2>Let’s build something strong together</h2>
+        <p>I’m eager to grow with a team that values quality, creativity, and consistent improvement.</p>
+        <a className="btn btn-primary" href="mailto:yourname@email.com">
+          Contact Me
+        </a>
       </section>
     </main>
-   </>
-    
-
-
-
   );
 };
 

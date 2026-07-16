@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import Home from "../pages/Home"
 import About from "../pages/About"
+import Projects from "../pages/Projects"
+import Assignments from "../pages/Assignments"
 import Taskone from "../days/Taskone"
 import Tasktwo from "../days/Tasktwo"
 import Hometwo from "../pages/Day_two/Hometwo"
@@ -53,6 +55,8 @@ const Approute = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/assignments" element={<Assignments />} />
         <Route path="/taskone" element={<Taskone />} />
         <Route path="/taskfour" element={<Taskfour />} />
         <Route path="/taskfive" element={<Taskfive />} />
