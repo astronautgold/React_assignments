@@ -19,6 +19,7 @@ const assignmentLinks = [
   { to: "/task_eigthteen", label: "Task Eighteen", description: "Context and provider-based work" },
   { to: "/spl_week_three", label: "SPL Week Three", description: "Special practice tasks" },
   { to: "/splclass_one", label: "SPL Class Task", description: "Class-based practice" },
+   { to: "/task_twentyfour", label: "Task Twenty Four", description: "Practices on useReducer hook" },
 ];
 
 const Assignments = () => {

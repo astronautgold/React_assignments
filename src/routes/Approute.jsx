@@ -41,6 +41,9 @@ import Task_eigthteen from "../days/Task_eigthteen"
 import Task_eighteen_one from "../pages/Task_eighteen/Task_one/Task_one"
 import Product_cards from "../pages/Task_eighteen/Task_two/Product_cards"
 import Header from "../pages/Task_eighteen/Task_three/Header"
+import Task_twentyfour from "../days/Task_twentyfour"
+import Counter_reduce from "../pages/Task_twentyfour/Counter_reduce"
+import Todo_usereduce from "../pages/Task_twentyfour/Todo_usereduce"
 
 const Approute = () => {
   const Skills=["HTML","CSS","JavaScript","React","Node.js"]
@@ -76,10 +79,26 @@ const Approute = () => {
    <Route path="/task_thirteen" element={<Task_thirteen/>} />
 <Route path="/task_fivteen" element={<Task_fivteen/>} />
    <Route path="/task_sixteen" element={<Task_sixteen/>} />
-
    <Route path="/task_eleven" element={<Task_eleven/>} />
       <Route path="/task_ten" element={<Task_ten/>} />
 
+
+<Route path="/task_twentyfour" element={<Task_twentyfour/>}>
+          <Route index element={<Counter_reduce/>} />
+          <Route path="counter_reduce" element={<Counter_reduce/>} />
+          <Route path="todo_usereduce" element={<Todo_usereduce />} />
+          <Route
+            path="product_spltwo"
+            element={
+              <Product_spltwo
+                Product_Name="Mobile"
+                Product_Price={60000}
+                Product_Category="Electronics"
+                Product_Brand="OPPO"
+              />
+            }
+          />
+        </Route>
 
         <Route path="/Spl_second_week" element={<Spl_second_week />}>
           <Route index element={<Student_spltwo Name="Ramya" Age={22} City="Chennai" Course="MERN Stack" />} />
