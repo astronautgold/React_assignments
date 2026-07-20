@@ -44,6 +44,7 @@ import Header from "../pages/Task_eighteen/Task_three/Header"
 import Task_twentyfour from "../days/Task_twentyfour"
 import Counter_reduce from "../pages/Task_twentyfour/Counter_reduce"
 import Todo_usereduce from "../pages/Task_twentyfour/Todo_usereduce"
+import Task_ninteen from "../days/Task_ninteen"
 
 const Approute = () => {
   const Skills=["HTML","CSS","JavaScript","React","Node.js"]
@@ -73,7 +74,7 @@ const Approute = () => {
 
   <Route path="/task_nine" element={<Task_nine />} />
  <Route path="/task_seventeen" element={<Task_seventeen />} />
-
+ <Route path="/task_ninteen" element={<Task_ninteen />} />
 
   <Route path="/task_twelve" element={<Task_twelve />} />
    <Route path="/task_thirteen" element={<Task_thirteen/>} />

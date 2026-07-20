@@ -17,9 +17,11 @@ const assignmentLinks = [
   { to: "/task_fivteen", label: "Task Fifteen", description: "UI and logic task" },
   { to: "/task_seventeen", label: "Task Seventeen", description: "Advanced implementation task" },
   { to: "/task_eigthteen", label: "Task Eighteen", description: "Context and provider-based work" },
+     { to: "/task_twentyfour", label: "Task Twenty Four", description: "Practices on useReducer hook" },
+
   { to: "/spl_week_three", label: "SPL Week Three", description: "Special practice tasks" },
   { to: "/splclass_one", label: "SPL Class Task", description: "Class-based practice" },
-   { to: "/task_twentyfour", label: "Task Twenty Four", description: "Practices on useReducer hook" },
+   { to: "/task_ninteen", label: "Task Ninteen", description: "Practices on custom hook" },
 ];
 
 const Assignments = () => {
